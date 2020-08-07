@@ -21,15 +21,15 @@ public class ZipTest{
         int zip = input.nextInt();
         input.nextLine();
         Zipcode code1 = new Zipcode(zip);
-	    System.out.println("The corresponding bar code: ");
+	System.out.println("The corresponding bar code: ");
         System.out.println(code1.getBarcode());
 
         //Convert from bar to ZIP code
-	    System.out.println("Now please provide a bar code: ");
-	    String bar = input.nextLine();
-	    Zipcode code2 = new Zipcode(bar);
-	    System.out.println("The corresponding ZIP code: ");
-	    System.out.println(code2.getZIPcode());
+	System.out.println("Now please provide a bar code: ");
+	String bar = input.nextLine();
+	Zipcode code2 = new Zipcode(bar);
+	System.out.println("The corresponding ZIP code: ");
+	System.out.println(code2.getZIPcode());
     }
 }
     
