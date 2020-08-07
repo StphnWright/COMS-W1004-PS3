@@ -28,11 +28,11 @@ public class Zipcode{
 		this.barcode = barcode; //initializes instance variables with parameter value
 	}
 
-    //method to convert barcode string to digit integer
+    	//method to convert barcode string to digit integer
 	private static int getDigit(String barcode)
 	{
 		int digit = -1; //initializes to negative to identify invalide entry
-        if(barcode.equals("||:::")) //.equals compares strings
+        	if(barcode.equals("||:::")) //.equals compares strings
 			digit = 0;
 		else if(barcode.equals(":::||")) //else if to return digit when match found
 			digit = 1;
@@ -56,7 +56,7 @@ public class Zipcode{
 	}
 
 	//method to convert digit integer to barcode string
-    private static String getBarcode(int digit)
+    	private static String getBarcode(int digit)
 	{
 		String code = ""; //initializes empty string to detect errors
 		if(digit == 0) //will return empty string as error if not 0-9
@@ -83,7 +83,7 @@ public class Zipcode{
 	}
 
 	//converts and stores zip code as an array of digits
-    private static int[] zipToDigits(int zip)
+    	private static int[] zipToDigits(int zip)
 	{
 		int[] result = new int[5]; //creates an array to store five integers
 		for(int i = result.length - 1; i >= 0; i--) //works backwards from position four 
@@ -94,7 +94,7 @@ public class Zipcode{
 		return result; //return each digit in the array digits
 	}  
 
-    //method to return full barcode counterpart of entered zip code
+    	//method to return full barcode counterpart of entered zip code
 	public String getBarcode()
 	{
 		if (barcode == null) //test if barcode exists
@@ -116,7 +116,7 @@ public class Zipcode{
 	}
 
 	//method to return full zip code counterpart of entered barcode
-    public int getZIPcode()
+    	public int getZIPcode()
 	{
 		if (zipcode == 0) //test if zipcode exists
 		{
