@@ -11,17 +11,17 @@
 public class Computer{
 
 	//declares instance variables
-    private int mode; //contains levels of difficulty 1 = stupid, 2 = smart
+    	private int mode; //contains levels of difficulty 1 = stupid, 2 = smart
 	private int choice; //number of marbles the computer selects
 
 	//constructor class initializes instance variables
-    public Computer(int m){
+    	public Computer(int m){
         
 		mode = m; //mode starts at int m
 		choice = -1; //computer turn begins at -1 and changes as move method is called
 	}
 
-    //method to calculate computer player moves and quantity of marbles
+    	//method to calculate computer player moves and quantity of marbles
 	public void move(int marblesLeft){
 
 		boolean special; //indicates the number of marbles is a power of two minus one
@@ -73,7 +73,7 @@ public class Computer{
 		}
 	}
 
-    //method to return the computer player choice
+    	//method to return the computer player choice
 	public int getChoice(){
 		return choice;
 	}
